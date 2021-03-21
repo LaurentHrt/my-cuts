@@ -1,0 +1,23 @@
+{
+  "name": "my-cuts",
+  "version": "1.0.0",
+  "description": "Web interface for my personal shortcuts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaurentHrt/my-cuts.git"
+  },
+  "author": "Laurent Hirth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaurentHrt/my-cuts/issues"
+  },
+  "homepage": "https://github.com/LaurentHrt/my-cuts#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "prettier": "^2.2.1"
+  }
+}

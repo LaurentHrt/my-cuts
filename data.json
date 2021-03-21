@@ -1,0 +1,50 @@
+{
+  "VScode": [
+    {
+      "shortcut": "Ctrl Sh p",
+      "label": "Command Pallette"
+    },
+    {
+      "shortcut": "Sh Alt 🔽",
+      "label": "Copy line down"
+    },
+    {
+      "shortcut": "Ctrl Sh K",
+      "label": "Delete line"
+    }
+  ],
+  "Windows": [
+    {
+      "shortcut": "Win Maj S",
+      "label": "Screenshot"
+    },
+    {
+      "shortcut": "Win .",
+      "label": "Emojis"
+    },
+    {
+      "shortcut": "Win Arrow",
+      "label": "Move windows"
+    }
+  ],
+  "Linux": [
+    {
+      "shortcut": "Ctrl Alt t",
+      "label": "New terminal"
+    }
+  ],
+  "Firefox": [
+    {
+      "shortcut": "F12",
+      "label": "Open dev tools"
+    },
+    {
+      "shortcut": "Ctrl Sh M",
+      "label": "Toogle responsive view"
+    },
+    {
+      "shortcut": "Ctrl R",
+      "label": "Reload"
+    }
+  ]
+}
