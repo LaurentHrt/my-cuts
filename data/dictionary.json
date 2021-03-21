@@ -1,0 +1,30 @@
+{
+  "Abbreviations": [
+    {
+      "word": "Paas",
+      "definition": "Platform as a Service"
+    },
+    {
+      "word": "CI",
+      "definition": "Continuous Integration"
+    },
+    {
+      "word": "CD",
+      "definition": "Continuous Delivery"
+    }
+  ],
+  "Jargon": [
+    {
+      "word": "Stateless/Statefull",
+      "definition": "L'application garde un état en mémoire si on la redémarre, elle est Stateful"
+    },
+    {
+      "word": "A predicate function",
+      "definition": "A function that returns true or false"
+    },
+    {
+      "word": "Stach/Queue",
+      "definition": "Pile/File"
+    }
+  ]
+}

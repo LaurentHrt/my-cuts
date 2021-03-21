@@ -16,31 +16,92 @@
     <header class="container mb-4 mt-3">
       <h1 class="text-center display-1 mb-3">My Cuts</h1>
 
-      <div class="input-group">
+      <div class="input-group mb-4">
         <input
           type="text"
           class="form-control"
           placeholder="What cut are you looking for ?"
         />
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-        >
-          Search
-        </button>
+        <button class="btn btn-outline-secondary" type="button">Search</button>
+      </div>
+
+      <nav class="mb-4">
+        <div class="nav nav-tabs" id="nav-tab">
+          <button
+            class="nav-link active"
+            id="nav-cheatsheets-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-cheatsheets"
+          >
+            Cheatsheets
+          </button>
+          <button
+            class="nav-link"
+            id="nav-shotcuts-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-shortcuts"
+          >
+            Shortcuts
+          </button>
+          <button
+            class="nav-link"
+            id="nav-dictionary-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-dictionary"
+          >
+            Dictionary
+          </button>
+        </div>
+      </nav>
+
+      <div class="tab-content" id="horizontalNav-tabContent">
+        <div class="tab-pane fade show active" id="nav-cheatsheets">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group" id="cheatsheetsList-tab"></div>
+              </div>
+              <div class="col-8">
+                <div
+                  class="tab-content"
+                  id="cheatsheetsVerticalNav-tabContent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-shortcuts">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group" id="shortcutsList-tab"></div>
+              </div>
+              <div class="col-8">
+                <div
+                  class="tab-content"
+                  id="shortcutsVerticalNav-tabContent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-dictionary">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group" id="dictionaryList-tab"></div>
+              </div>
+              <div class="col-8">
+                <div
+                  class="tab-content"
+                  id="dictionaryVerticalNav-tabContent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="list-group" id="list-tab"></div>
-        </div>
-        <div class="col-8">
-          <div class="tab-content" id="nav-tabContent"></div>
-        </div>
-      </div>
-    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
