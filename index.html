@@ -13,14 +13,33 @@
     <title>My Cuts</title>
   </head>
   <body>
-    <div class="d-flex align-items-start">
-      <div
-        class="nav flex-column nav-pills me-3"
-        id="v-pills-tab"
-        role="tablist"
-        aria-orientation="vertical"
-      ></div>
-      <div class="tab-content" id="v-pills-tabContent"></div>
+    <header class="container mb-4 mt-3">
+      <h1 class="text-center display-1 mb-3">My Cuts</h1>
+
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="What cut are you looking for ?"
+        />
+        <button
+          class="btn btn-outline-secondary"
+          type="button"
+        >
+          Search
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab"></div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent"></div>
+        </div>
+      </div>
     </div>
 
     <script

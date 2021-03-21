@@ -13,36 +13,48 @@ function fetchData () {
 }
 
 function displayPage(data) {
-    const tab = document.querySelector('#v-pills-tab') 
-    const tabContent = document.querySelector('#v-pills-tabContent') 
+    const tab = document.querySelector('#list-tab') 
+    const tabContent = document.querySelector('#nav-tabContent') 
 
     for (const [category, value] of Object.entries(data)) {
-        const tabBtn = document.createElement('button')
+        const tabBtn = document.createElement('a')
         const tabContentElement = document.createElement('div')
+        const table = document.createElement('table')
+        const tbody = document.createElement('tbody')
 
-        tabBtn.classList.add('nav-link')
-        tabBtn.id = 'v-pills-' + category + '-tab'
-        tabBtn.setAttribute('data-bs-toggle', 'pill')
-        tabBtn.setAttribute('data-bs-target', "#v-pills-" + category)
+        tabBtn.classList.add('list-group-item', 'list-group-item-action')
+        tabBtn.id = 'list-' + category + '-list'
+        tabBtn.setAttribute('data-bs-toggle', 'list')
+        tabBtn.href = '#list-' + category
         tabBtn.textContent = category
-
+        
         tabContentElement.classList.add('tab-pane', 'fade')
-        tabContentElement.id = 'v-pills-' + category
+        tabContentElement.id = 'list-' + category
+        tabContentElement.append(table)
+        
+        table.classList.add('table', 'table-striped', 'table-hover', 'table-bordered')
+        table.append(tbody)
 
         value.forEach(element => {
-            const shortcut = document.createElement('div')
-            shortcut.textContent = element.shortcut + ' : ' + element.label
-            tabContentElement.append(shortcut)
-        });
+            const tr = document.createElement('tr')
+            const td1 = document.createElement('td')
+            const td2 = document.createElement('td')
 
+            td1.textContent = element.shortcut
+            td2.textContent = element.label
+
+            tr.append(td1)
+            tr.append(td2)
+            tbody.append(tr)
+        });
+        
         tab.append(tabBtn)
         tabContent.append(tabContentElement)
         
     }
 
-    tab.querySelector('button:first-child').classList.add('active')
+    tab.querySelector('a').classList.add('active')
     tabContent.querySelector('div:first-child').classList.add('show', 'active')
 }
-
 
 fetchData()

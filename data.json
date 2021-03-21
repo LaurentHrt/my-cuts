@@ -11,6 +11,46 @@
     {
       "shortcut": "Ctrl Sh K",
       "label": "Delete line"
+    },
+    {
+      "shortcut": "Ctrl D",
+      "label": "Select Next"
+    },
+    {
+      "shortcut": "Ctrl Alt 🔽",
+      "label": "Add cursor down"
+    },
+    {
+      "shortcut": "Ctrl K Ctrl 0",
+      "label": "Fold all"
+    },
+    {
+      "shortcut": "Ctrl K Ctrl J",
+      "label": "Unfold all"
+    },
+    {
+      "shortcut": "Alt Z",
+      "label": "Toogle word wrap"
+    },
+    {
+      "shortcut": "Ctrl K S",
+      "label": "Save all"
+    },
+    {
+      "shortcut": "Ctrl Sh F",
+      "label": "Find everywhere"
+    },
+    {
+      "shortcut": "Ctrl ù",
+      "label": "Toogle terminal"
+    },
+    {
+      "shortcut": "Alt W",
+      "label": "Wrap with abreviation (custom)"
+    },
+    {
+      "shortcut": "Alt Sh F",
+      "label": "Format document"
     }
   ],
   "Windows": [
@@ -25,6 +65,14 @@
     {
       "shortcut": "Win Arrow",
       "label": "Move windows"
+    },
+    {
+      "shortcut": "Win Ctrl Arrow",
+      "label": "Switch desktop"
+    },
+    {
+      "shortcut": "Win P",
+      "label": "Multi screen"
     }
   ],
   "Linux": [
